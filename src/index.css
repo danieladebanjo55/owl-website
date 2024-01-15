@@ -8,10 +8,24 @@ background-image: url('../src/assets/plxus.gif') ;
 background-size: cover;
 font-family: "Inter", sans-serif;
 background-repeat: no-repeat;
-overflow-y: hidden;
-
 
   }
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+ 
+  }
+  @media (max-width: 768px) {
+    html, body {
+      
+      overflow-y: scroll;
+      
+    }
+  }
+ 
   
   ul {
     margin: 0;

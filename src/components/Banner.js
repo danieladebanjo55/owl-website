@@ -14,9 +14,9 @@ function Banner() {
   return (
     <>
     {loading && <LoadingScreen />}
-      <main className={`w-full h-full md:px-5 lg:px-10`}>
-        {/* {loading && <LoadingScreen />} */}
-        <div className="flex w-full lg:h-1/2 md:flex-row flex-col justify-between items-center lg:pt-10">
+      <main className={`w-full md:px-5 lg:px-10`}>
+        
+        <div className="flex w-full h-full md:flex-row flex-col justify-between items-center lg:pt-10">
           <div className="lg:w-2/5 flex flex-col md:items-start items-center my-10">
             <h1 className="font-semibold  text-center md:text-start text-3xl lg:text-4xl text-white">
               <span className="text-[#F4CE14]">Participate to win </span>
