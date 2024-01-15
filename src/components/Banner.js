@@ -13,9 +13,10 @@ function Banner() {
   
   return (
     <>
-      <main className={`w-full lg:h-full md:px-5 lg:px-10`}>
-        {loading && <LoadingScreen />}
-        <div className="flex w-full h-1/2 md:flex-row flex-col justify-between items-center lg:pt-10">
+    {loading && <LoadingScreen />}
+      <main className={`w-full h-full md:px-5 lg:px-10`}>
+        {/* {loading && <LoadingScreen />} */}
+        <div className="flex w-full lg:h-1/2 md:flex-row flex-col justify-between items-center lg:pt-10">
           <div className="lg:w-2/5 flex flex-col md:items-start items-center my-10">
             <h1 className="font-semibold  text-center md:text-start text-3xl lg:text-4xl text-white">
               <span className="text-[#F4CE14]">Participate to win </span>
@@ -40,7 +41,7 @@ function Banner() {
         <div className="flex md:flex-row flex-col items-center md:justify-between py-5 lg:pt-32 md:pt-28">
           <div className="text-2xl font-bold flex lg:gap-2 lg:flex-row flex-col lg:items-center items-center  justify-start text-[#F4CE14] mx-10 md:mx-0">
             <span className="underline text-3xl">Previous Winner </span>
-
+               
             <span className="text-white text-sm py-2 lg:pt-[20px]">
               0x53b13a6D43f647D788411Abfd28D229C274AfBF9
             </span>
