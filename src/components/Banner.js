@@ -14,7 +14,7 @@ function Banner() {
   return (
     <>
     {loading && <LoadingScreen />}
-      <main className={`w-full md:px-5 lg:px-10`}>
+      <main className={`w-full md:px-5 lg:px-10 overflow-hidden`}>
         
         <div className="flex w-full h-full md:flex-row flex-col justify-between items-center lg:pt-10">
           <div className="lg:w-2/5 flex flex-col md:items-start items-center my-10">
