@@ -1,7 +1,7 @@
 import React, {useState } from "react";
 import { SlSocialTwitter } from "react-icons/sl";
 import { RiDiscordLine } from "react-icons/ri";
-import { LuSend } from "react-icons/lu";
+import { PiTelegramLogo } from "react-icons/pi";
 import LoadingScreen from "./Loadingscreen";
 import SkewedButton from "./SkewedButton";
 import Countdown from "./Countdown";
@@ -9,7 +9,7 @@ import Countdown from "./Countdown";
 function Banner() {
   const [loading, setLoading] = useState(true);
   // Set the draw date to your desired date and time
-  const drawDate = new Date("Jan 15, 2024 21:53:00").getTime();
+  const drawDate = new Date("Jan 16, 2024 9:10:00").getTime();
   
   return (
     <>
@@ -33,7 +33,7 @@ function Banner() {
             </div>
           </div>
          
-            <div className="flex flex-col h-[78dvh] gap-x-5 items-center justify-start">
+            <div className="flex flex-col h-[78dvh] md:h-[50dvh] gap-x-5 items-center justify-start">
               <SkewedButton />
 
               <div className="mt-5 md:mb-3 mb-2">
@@ -44,7 +44,7 @@ function Banner() {
              
          
         </div>
-        <div className="flex md:flex-row flex-col items-center md:justify-between absolute bottom-5 right-0 px-4 w-full">
+        <div className="flex md:flex-row flex-col items-center md:justify-between absolute bottom-5 md:bottom-0 right-0 px-4 w-full">
           <div className="text-2xl font-bold flex lg:gap-2 lg:flex-row flex-col lg:items-center items-center  justify-start text-[#F4CE14] mx-10 md:mx-0">
             <span className="underline text-2xl text-white font-kokoro">Previous Winner </span>
                
@@ -58,7 +58,7 @@ function Banner() {
               <li className="">
                 <a href="/" className="">
                   <span className="relative z-10 flex justify-center items-center py-3">
-                    <LuSend size={20} />
+                  <PiTelegramLogo size={20}/>
                   </span>
                   <span className=""></span>
                 </a>
