@@ -11,7 +11,7 @@ function Playmusic() {
 
   const handleSongFinishedPlaying = () => {
     // Handle song finished playing logic
-    setIsPlaying(true);
+    setIsPlaying(false);
   };
 
   return (
@@ -19,9 +19,9 @@ function Playmusic() {
       {/* <button onClick={handlePlay}>Play Music</button> */}
       <Sound
         url={TheOtherSide}
-        playStatus={isPlaying ? Sound.status.PLAYING : ''}
+        playStatus={isPlaying && Sound.status.PLAYING}
         playFromPosition={300}
-        onFinishedPlaying={handleSongFinishedPlaying}
+        // onFinishedPlaying={handleSongFinishedPlaying}
       />
     </div>
   );
