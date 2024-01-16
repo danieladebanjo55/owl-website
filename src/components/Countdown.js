@@ -42,19 +42,19 @@ function Countdown({ drawDate }) {
         <div className="w-[80px] h-[50px] bg-[#222] grid place-items-center text-white text-[36px]">
           {timeLeft.hours}
         </div>
-        <p className="m-[1px] text-center">Hour</p>
+        <p className="m-[1px] text-center font-kokoro">Hours</p>
       </div>
       <div className="time bg-yellow-400 h-20 text-black font-bold mx-[5px]">
         <div className="w-[80px] h-[50px] bg-[#222] grid place-items-center text-white text-[36px]">
           {timeLeft.minutes}
         </div>
-        <p className="m-[1px] text-center">Minute</p>
+        <p className="m-[1px] text-center font-kokoro">Minutes</p>
       </div>
       <div className="time bg-yellow-400 h-20 text-black font-bold mx-[5px]">
         <div className="w-[80px] h-[50px] bg-[#222] grid place-items-center text-white text-[36px]">
           {timeLeft.seconds}
         </div>
-        <p className="m-[1px] text-center">Second</p>
+        <p className="m-[1px] text-center font-kokoro">Seconds</p>
       </div>
     </div>
   );

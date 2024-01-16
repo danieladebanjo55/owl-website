@@ -1,31 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+@font-face {
+  font-family: 'Kokoro';
+  src: url('../public/Kokoro-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Kumar';
+  src: url('../public/KumarOne-Regular.ttf') format('truetype');
+}
+
   body{
 background-image: url('../src/assets/plxus.gif') ;
 background-size: cover;
-font-family: "Inter", sans-serif;
 background-repeat: no-repeat;
 
   }
   html, body {
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
     overflow: hidden;
     
  
   }
-  @media (max-width: 768px) {
+  /* @media (max-width: 600px) {
     html, body {
-      max-height: 100%;
-      /* overflow-y: scroll; */
+      height: 100vh;
       
     }
   }
- 
+  */
   
   ul {
     margin: 0;
@@ -41,13 +49,12 @@ background-repeat: no-repeat;
   ul li a {
     position: relative; 
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     text-align: center;
     line-height: 63px;
     background: #333;
     border-radius: 50%;
-    font-size: 30px;
     color: #666;
     transition: .5s;
   }
@@ -101,11 +108,11 @@ background-repeat: no-repeat;
     
         display: block;
         position: relative;
-        padding: 1.5em 3em;
+        padding: 25px 40px;
         appearance: none;
         border: 0;
-        background: white;
-        color: #F4CE14;
+        background: #F4CE14;
+        color: #000;
         text-transform: uppercase;
         letter-spacing: 0.25em;
         outline: none;
@@ -116,6 +123,7 @@ background-repeat: no-repeat;
     
         &:hover {
             background: rgba(100, 90, 0, 0.03);
+            color: #fff;
         }
     
         .button-h,
@@ -174,15 +182,15 @@ background-repeat: no-repeat;
 
     /* draw button css */
     .example_a {
-      color: #F4CE14 !important;
+      color: #000;
       text-transform: uppercase;
       text-decoration: none;
-      background: #fff;
+      background: #F4CE14;
       padding: 20px 30px;
-      border-radius: 5px;
       display: inline-block;
       border: none;
       transition: all 0.4s ease 0s;
+      overflow: hidden;
     }
     .example_a:hover {
       background: transparent;
@@ -192,6 +200,8 @@ background-repeat: no-repeat;
       -moz-box-shadow: 0px 5px 40px -10px rgba(0, 0, 0, 0.57);
       box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
       transition: all 0.4s ease 0s;
+      color:#fff;
+      
     }
     
     
