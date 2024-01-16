@@ -33,7 +33,7 @@ function Banner() {
             </div>
           </div>
          
-            <div className="flex flex-col h-[78dvh] md:h-[50dvh] gap-x-5 items-center justify-start">
+            <div className="flex flex-col h-[78dvh] md:h-[60dvh] gap-x-5 items-center pt-5 md:pt-14 justify-start">
               <SkewedButton />
 
               <div className="mt-5 md:mb-3 mb-2">
@@ -44,7 +44,7 @@ function Banner() {
              
          
         </div>
-        <div className="flex md:flex-row flex-col items-center md:justify-between absolute bottom-5 md:bottom-0 right-0 px-4 w-full">
+        <div className="flex md:flex-row flex-col items-center md:justify-between absolute bottom-2 md:bottom-0 right-0 px-4 w-full">
           <div className="text-2xl font-bold flex lg:gap-2 lg:flex-row flex-col lg:items-center items-center  justify-start text-[#F4CE14] mx-10 md:mx-0">
             <span className="underline text-2xl text-white font-kokoro">Previous Winner </span>
                
