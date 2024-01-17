@@ -1,11 +1,8 @@
 import React, { useEffect, useState } from "react";
-
 function Countdown({ drawDate }) {
-  
   const calculateTimeLeft = () => {
     const now = new Date().getTime();
     const distance = drawDate - now;
-
     if (distance <= 0) {
       return {
         hours: 0,
@@ -13,13 +10,11 @@ function Countdown({ drawDate }) {
         seconds: 0,
       };
     }
-
     const hours = Math.floor(
       (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
     );
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
     return {
       hours,
       minutes,
@@ -27,7 +22,6 @@ function Countdown({ drawDate }) {
     };
   };
   const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
-
   useEffect(() => {
     const timerId = setInterval(() => {
       setTimeLeft(calculateTimeLeft());
@@ -35,7 +29,6 @@ function Countdown({ drawDate }) {
 
     return () => clearInterval(timerId);
   }, []);
-
   return (
     <div className="flex">
       <div className=" bg-yellow-400 h-20 text-black font-bold mx-[5px]">
