@@ -4,7 +4,7 @@ import { PiTelegramLogo } from "react-icons/pi";
 import LoadingScreen from "./Loadingscreen";
 import Countdown from "./Countdown";
 import Sound from "react-sound";
-import TheOtherSide from "../assets/music.mp3";
+import TheOtherSide from "../assets/music3.mp3";
 import { Switch } from "@material-tailwind/react";
 
 function Banner({ participants, bagPrice }) {
@@ -13,15 +13,6 @@ function Banner({ participants, bagPrice }) {
   const [isSoundOn, setIsSoundOn] = useState(true);
   // Set the draw date to your desired date and time
   const drawDate = new Date("Jan 16, 2024 9:10:00").getTime();
-
-  const handlePlay = () => {
-    setPlayStatus(Sound.status.PLAYING);
-    setIsSoundOn();
-  };
-
-  const handleStop = () => {
-    setPlayStatus(Sound.status.STOPPED);
-  };
 
   const handleSongFinishedPlaying = () => {
     // Handle song finished playing logic
